@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+     <!-- Primary Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intentum - Meu Perfil</title>
+    <meta name="title" content="Intentum - Meu Perfil">
+    <meta name="description" content="A Intentum é uma agência de marketing e branding centrada no cliente, especializada em soluções inovadoras e sustentáveis, incluindo realidade virtual, influencer marketing, inteligência emocional e gamificação. Transforme sua marca conosco.">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.intentum.com.br">
+    <meta property="og:title" content="Intentum - Meu Perfil">
+    <meta property="og:description" content="A Intentum é uma agência de marketing e branding centrada no cliente, especializada em soluções inovadoras e sustentáveis, incluindo realidade virtual, influencer marketing, inteligência emocional e gamificação. Transforme sua marca conosco.">
+    <meta property="og:image" content="img/Vinheta-Intentum-Mídia-Objetiva.gif">
+    <!-- Twitter --> 
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.intentum.com.br">
+    <meta property="twitter:title" content="Intentum - Meu Perfil">
+    <meta property="twitter:description" content="A Intentum é uma agência de marketing e branding centrada no cliente, especializada em soluções inovadoras e sustentáveis, incluindo realidade virtual, influencer marketing, inteligência emocional e gamificação. Transforme sua marca conosco.">
+    <meta property="twitter:image" content="img/Vinheta-Intentum-Mídia-Objetiva.gif">  
+     <!-- Style Meta Tags -->
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" /> 
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-hDbD1g7GuJwE5fjM5Cy8NzQ7tW0xk9ppn0BzjZXbmr7tca5F54xd5e5KZl5MkIeWcR1iM7V+wtxcP3q4VZ4O3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-5enhl8ejGbcirDgk1z42v1NnH8Ce6sdgG+Tc/xvGeJfSqW8OpX9evohXy+yuQpp1ddF6aKk//0gaf+ZOY3qUZA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/countup.js@2.0.7/dist/countUp.min.js"></script>
+
+</head>
+<!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/39507429.js"></script>
+<!-- End of HubSpot Embed Code -->
+
+<body>
+
+<!-- Navbar --> 
+<header class="navbar">
+    <div class="container">
+        <div class="logo">
+            <a href="#">
+                <img src="img/logo-intentum.png" alt="Intentum Mídia Objetiva" /> <!-- Adicione o caminho da sua logo -->
+            </a>
+        </div>
+        <nav id="menuList"  class="menu">
+            <ul class="menu-list">
+                <li class="has-submenu">
+                    <a href="#clientes">Clientes</a>
+                    <ul class="submenu">
+                      <li><a href="#casos">Casos de Sucesso</a></li>
+                      <li><a href="#parceiros">Parceiros</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#sobre">Sobre</a></li>
+
+                  <li class="has-submenu">
+                    <a href="#solucoes">Soluções</a>
+                    <ul class="submenu">
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#recursos">Recursos</a></li>
+                    </ul>
+                  </li>
+                <li><a href="#precos">Preços</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#seja-cliente">Seja Cliente</a></li>
+                <li id="loginMobile" class="mobile-login"><a href="#login" class="btn-login">Entrar</a></li>
+
+            </ul>
+        </nav>
+        <a href="#login" id="loginTop" class="btn-login">Entrar</a>
+
+
+        <div class="menu-toggle">
+            
+            <i class="material-icons">menu</i>
+
+            
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</header>
+
+
+    <!-- Pop-up de login -->
+    <div id="loginPopup" class="login-popup">
+      <div class="login-popup-content">
+        <span class="close">&times;</span>
+        <h2>Entrar</h2>
+        
+        <form class="login-form" action="/login" method="POST">
+          <div class="form-group">
+            <input type="text" id="email" required />
+            <label for="email">E-mail</label>
+          </div>
+          <div class="form-group">
+            <input type="password" id="password" required />
+            <label for="password">Senha</label>
+          </div>
+          <button type="submit" class="entrar">Entrar</button>
+        </form>
+        
+        <p>ou faça login com:</p>
+        <div class="social-login">
+          <a href="https://www.facebook.com/v12.0/dialog/oauth?client_id={client-id}&redirect_uri={redirect-uri}&scope={scope}" class="facebook"><i class="fab fa-facebook"></i></a>
+          <a href="https://accounts.google.com/o/oauth2/auth?client_id={client-id}&redirect_uri={redirect-uri}&scope={scope}&response_type=code" class="google"><i class="fab fa-google"></i></a>
+          <a href="https://www.linkedin.com/oauth/v2/authorization?response_type=code&client_id={client-id}&redirect_uri={redirect-uri}&scope={scope}&state={state}" class="linkedin"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <button id="show-signup" class="submit-popup">Cadastre-se</button>
+        </div>
+    </div>
+    
+
+        <!-- Pop-up de Cadastro -->
+        <div id="signupPopup" class="signup-popup">
+          <div class="signup-popup-content">
+            <span class="close">&times;</span>
+            <h2>Cadastre-se</h2>
+            
+            <form class="signup-form" method="POST">
+              <div class="form-group">
+                <input type="text" id="email" name="email" required />
+                <label for="email">E-mail</label>
+              </div>              
+              <div class="form-group">
+                <input type="password" id="password" name="password" required />
+                <label for="password">Senha</label>
+              </div>
+              <button type="submit" class="entrar">Cadastrar</button>
+            </form>
+            
+            <p>ou cadastre-se com:</p>
+            <div class="social-login">
+              <a href="https://www.facebook.com/v12.0/dialog/oauth?client_id={client-id}&redirect_uri={redirect-uri}&scope={scope}" class="facebook"><i class="fab fa-facebook"></i></a>
+              <a href="https://accounts.google.com/o/oauth2/auth?client_id={client-id}&redirect_uri={redirect-uri}&scope={scope}&response_type=code" class="google"><i class="fab fa-google"></i></a>
+              <a href="https://www.linkedin.com/oauth/v2/authorization?response_type=code&client_id={client-id}&redirect_uri={redirect-uri}&scope={scope}&state={state}" class="linkedin"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <button id="back-to-login" class="submit-popup">Voltar ao Login</button>
+          </div>
+        </div>
+
+        
+        <div id="success-message" style="display: none;">Cadastro realizado com sucesso!</div>
+
+
+<!-- FIM DO CABEÇALHO GERAL -->
+
+
+        
+  <main>
+    <section class="profile-container">
+        <div class="profile-sidebar">
+          <div class="avatar-container">
+            <img src="img/avatar-placeholder.png" alt="Avatar" class="avatar">
+            <button class="edit-avatar">Editar Avatar</button>
+          </div>
+          <nav class="profile-navigation">
+            <a href="#">Meus Dados</a>
+            <a href="#">Configurações</a>
+            <a href="#">Sair</a>
+          </nav>
+        </div>
+  
+        <div class="profile-content">
+          <div class="profile-info">
+            <h2>Nome do Usuário</h2>
+            <p><strong>Email:</strong> johndoe@example.com</p>
+            <p><strong>Telefone:</strong> (555) 123-4567</p>
+            <p><strong>Localização:</strong> São Paulo, Brasil</p>
+            <p><strong>Data de Nascimento:</strong> 01/01/1990</p>
+            <p><strong>Biografia:</strong> Desenvolvedor Web com mais de 5 anos de experiência em tecnologias como JavaScript, React e Node.js.</p>
+            <p><strong>Interesses:</strong> Programação, viagens, fotografia</p>
+            <button class="edit-profile" id="editProfile">Editar Perfil</button>
+          </div>
+          <div class="profile-edit" style="display: none;">
+            <!-- Formulário para editar perfil -->
+            <form>
+              <label for="name">Nome:</label>
+              <input type="text" id="name" name="name">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email">
+              <label for="phone">Telefone:</label>
+              <input type="tel" id="phone" name="phone">
+              <button type="submit">Salvar</button>
+            </form>
+          </div>
+        </div>
+      </section>
+  </main>
+
+  <footer>
+    <div class="footer-section">
+      <h4>Intentum Mídia Objetiva</h4>
+      <p>CNPJ: 47.802.068/0001-58</p>
+      <p>Email: contato@intentum.com.br</p>
+      <p>Telefone: +55 (32) 98883-7127</p>
+      <p>Endereço: Rua Demétrio Ribeiro, 600F - Barbacena - MG</p>
+    </div>
+  
+    <div class="footer-section">
+      <h4>Navegação</h4>
+      <ul class="footer-menu">
+        <li><a href="#">Sobre nós</a></li>
+        <li><a href="#">Serviços</a></li>
+        <li><a href="#">Portfólio</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </div>
+  
+    <div class="footer-section">
+        <h4>Redes Sociais</h4>
+        <ul class="social-icons">
+            <li><a href="#" class="custom-button"><i class="fab fa-whatsapp"></i></a></li>
+            <li><a href="#" class="custom-button"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#" class="custom-button"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#" class="custom-button"><i class="fab fa-linkedin-in"></i></a></li>
+        </ul>
+        <ul class="social-icons">
+            <li><a href="#" class="custom-button"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#" class="custom-button"><i class="fas fa-envelope"></i></a></li>
+            <li><a href="#" class="custom-button"><i class="fas fa-calendar-alt"></i></a></li>
+            <li><a href="#" class="custom-button"><i class="fas fa-phone"></i></a></li>           
+        </ul>
+      </div>
+      
+  
+    <div class="footer-section">
+      <h4>Comece a cumrpir suas metas!</h4>
+      <a href="#">Solicite um orçamento gratuito</a>
+    </div>
+  
+    <div class="footer-section">
+      <h4>Receba Novidades</h4>
+      <form>
+        <input type="email" class="newsletter-input" placeholder="Seu email">
+        <button type="submit" class="custom-button">Inscrever-se</button>
+      </form>
+    </div>
+  
+    <div class="footer-section">
+      <h4>Depoimentos e Certificações</h4>
+      <p>"Ótimo serviço e atendimento. Recomendo!" - Cliente Satisfeito</p>
+      <p>Certificado XYZ</p>
+    </div>
+  
+    <div class="footer-section">
+      <h4>Políticas e Termos</h4>
+      <ul class="privacy">
+        <li><a href="https://www.intentum.com.br/politica-de/privacidade">Política de Privacidade</a></li>
+        <li><a href="https://www.intentum.com.br/termos-de-uso">Termos de Uso</a></li>
+        <li><a href="https://www.intentum.com.br/impressum">Impressum</a></li>
+      </ul>
+    </div>
+  
+    <div class="footer-section">
+      <p>&copy; 2023 Intentum Mídia Objetiva. Todos os direitos reservados.</p>
+      <div><a href="#">
+        <img class="footer-logo" src="img\logo-intentum-horizontal-vazada.png" alt="Intentum Mídia Objetiva" /></a></div>
+    </div>
+  </footer>
+  
+
+<script src="main.js"></script>
+</body>
+</html>

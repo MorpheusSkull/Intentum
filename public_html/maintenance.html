@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="maintenance.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />             
+    <title>Intentum Mídia Objetiva</title>
+
+    
+    <body>
+        <div class="container">
+            <img src="img/logo-intentum-horizontal-vazada.png" class="logo">
+            <div class="content">
+                <p>O Site está em Manutenção</p>
+                <h1>Mas <span>Lançaremos</span> Logo</h1>
+                <div class="launch-time">
+                    <div>
+                        <p id="days">03</p>
+                        <span>Dias</span>
+                    </div>
+                    <div>
+                        <p id="hours">08</p>
+                        <span>Horas</span>
+                    </div>
+                    <div>
+                        <p id="minutes">00</p>
+                        <span>Minutos</span>
+                    </div>
+                    <div>
+                        <p id="seconds">00</p>
+                        <span>Segundos</span>
+                    </div>
+                </div>
+                <button type="button">Saiba Mais <img src="https://i.postimg.cc/QC1THsDM/triangle.png"></button>
+                <a href="wa.me/32988837127"></a>
+            </div>
+            <img src="https://i.postimg.cc/PfwZ6bDk/rocket.png" class="rocket">
+        </div>
+    </body>
+
+<script>
+
+  
+var countDownDate = new Date("May 1, 2023 15:00:00").getTime();
+            var x= setInterval(function(){
+                var now = new Date().getTime();
+                var distance = countDownDate - now;
+
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                document.getElementById("days").innerHTML = days;
+                document.getElementById("hours").innerHTML = hours;
+                document.getElementById("minutes").innerHTML = minutes;
+                document.getElementById("seconds").innerHTML = seconds;
+
+                if(distance < 0){
+                    clearInterval(x);
+                    document.getElementById("days").innerHTML = "00";
+                    document.getElementById("hours").innerHTML = "00";
+                    document.getElementById("minutes").innerHTML = "00";
+                    document.getElementById("seconds").innerHTML = "00";
+                    
+                }
+                
+            },1000);
+
+</script>
+
+</html>
