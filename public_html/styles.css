@@ -1,10 +1,14 @@
     /* Reset CSS */
+
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+
+    /* Estilo das Estruturas Principais */
 
 
 html,
@@ -267,6 +271,8 @@ header p {
 }
 
 
+    /* Estilo da Sessão de Vídeo */
+
 
 
 .hero-section {
@@ -306,6 +312,7 @@ header p {
   overflow: hidden;
   z-index: 2;
   margin-top: 2rem;
+  margin-bottom: 25px;
 }
 
 .video-container iframe {
@@ -318,7 +325,101 @@ header p {
 }
 
 
-/* Autoridade */
+
+/* SESSÃO DE VALORES */
+
+.valores-parallax-container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('img/background.jpg');
+  background-position: center 100px;
+  top: -40%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #000;
+  position: relative;
+  overflow: hidden; 
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+
+.valores-cards-container {
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 3rem;
+  color: #fff;
+}
+
+.valores-card {
+  width: calc(25% - 2rem);
+  height: 300px;
+  margin: 1rem;
+  padding: 1.5rem;
+  border-radius: 20px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.valores-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(33,16,57, 0.7);
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(5px) brightness(0.9);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.valores-parallax-container h2{
+
+font-size: 2rem;
+color: #fff;
+z-index: 2;
+position: relative;
+}
+
+
+.valores-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #800080;
+  }
+  
+  h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #fff;
+  }
+  
+  p {
+  margin-bottom: 1rem;
+  }
+  
+
+  button:hover {
+  background-color: #6b006b;
+  }
+
+
+
+/* SESSÃO DE AUTORIDADE */
+
+
+
+.testimonials h2 {
+
+  font-size: 2rem;
+  color: #211039;
+  z-index: 2;
+  position: relative;
+}
 
 
 .authority-section {
@@ -326,6 +427,14 @@ header p {
   padding: 50px 0;
   border-radius: 30px;
 }
+
+.authority-section h2{
+
+  font-size: 2rem;
+  color: #211039;
+  z-index: 2;
+  position: relative;
+  }
 
 .authority-section .container {
   display: flex;
@@ -948,7 +1057,22 @@ text-align: center;
 
 
 /* Responsiveness */
+
+
+@media screen and (max-width: 1024px) {
+  .valores-card {
+  width: calc(50% - 2rem);
+  }
+  }
+
+
+
 @media (max-width: 768px) {
+
+  .valores-card {
+width: calc(100% - 2rem);
+}
+
     .menu {
         display: none;
         position: absolute;
@@ -1046,6 +1170,12 @@ margin-top: 0px;
   .video-container iframe {
     width: 100%;
   }
+
+  .valores-parallax-container h2 {
+    font-size: 1.2rem;
+
+  }
+
 
   .testimonial {
  height: 250px;

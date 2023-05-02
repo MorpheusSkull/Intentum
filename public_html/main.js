@@ -214,3 +214,14 @@ window.onload = function() {
   countUp.start();
 };
 
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const parallaxContainer = document.getElementById('nossos-valores');
+
+  window.addEventListener('scroll', function() {
+    const scrollPosition = window.pageYOffset;
+    const parallaxSpeed = -1.5;
+    parallaxContainer.style.backgroundPositionY = `${scrollPosition * parallaxSpeed}px`;
+  });
+});
