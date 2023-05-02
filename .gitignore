@@ -3,5 +3,6 @@ config/.env
 config/.env.development
 package.json
 package-lock.json
+knexfile.js
 node_modules/
 migrations/
